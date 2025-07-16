@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bata>img {
+    width: 170px;
+   
+}
+
+nav>ul>li>img {
+    width: 100px;
+}
+
+.nav>nav>ul {
+    display: flex;
+}
+
+.nav>nav>ul>li {
+    list-style: none;
+    margin: 10px;
+}
+
+.logo1>.fa-solid {
+    font-size: 30px;
+}
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help {
+    border-bottom: 2px solid black;
+}
+
+
+.category {
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+}
+
+.category>.categorylist {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category>.categorylist>li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+.banner {
+    width: 100%;
+}
+
+.banner>.horizontal {
+    width: 100%;
+}
+
+.banner>.vertical {
+    width: 100%;
+}
+.section {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section>.cards {
+    width: 30%;
+}
+
+.section>.cards>img {
+    width: 100%;
+
+}
+
+/* MEDIA QUERY  */
+
+
+@media screen and (max-width:430px) {
+    .nav>nav>ul {
+        display: none;
+    }
+
+    .bata>img {
+        width: 100px;
+        flex: 1;
+        margin-left: 275px;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .category>ul {
+        display: none;
+    }
+
+    .horizontal{
+        display: none;
+    }
+
+    .section>.cards {
+        width: 95%;
+    }
+}
+
+
+@media screen and (min-width:430px) and (max-width:765px) {
+    .logo1>.fa-solid {
+        display: none;
+    }
+
+    .bata>img {
+        flex: 1;
+        margin-right: 188px;
+    }
+
+    .category>.categorylist {
+        display: none
+    }
+
+    .horizontal{
+        display: none;
+    }
+
+    .section>.cards {
+        width: 45%;
+    }
+}
+
+
+
+@media screen and (min-width:766px) {
+    .logo1>.fa-solid {
+        display: none;
+    }
+
+    .vertical {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:766px) {
+    .category>.categorylist {
+        display: none;
+    }
+
+}
+
+
+
